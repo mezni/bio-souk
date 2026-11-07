@@ -1,37 +1,38 @@
-# Rust
-target/
-debug/
-release/
-*.rs.bk
-*.rlib
-*.prof*
-*.o
-*.so
-*.a
+# See https://github.com/skwp/gitignore/blob/main/Global/gitignore_global
+# To share ignore patterns across all your repositories, run:
+# git config --global core.excludesfile ~/.gitignore_global
 
-# TypeScript/JavaScript
-node_modules/
-dist/
-build/
-*.log
-.env*
+# Dependency directories
+/node_modules/
+/.yarn/
 
-# Universal
-.DS_Store
-Thumbs.db
-*.tmp
-*.swp
-.vscode/
-.idea/
+# Production directories
+/dist/
+//build/
 
-# Docker
-Dockerfile*
-*.log*
-.env*
+# Environment files
+/.env*
+/.secret*
 
+# Logs
+/*.log
+/.pnpm-debug.log*
+/yarn-debug.log*
+/lerna-debug.log*
 
-.opencode/
-.specify/
+# TypeScript
+/.*.tsbuildinfo
+/out-*/
 
-# Keep the documented template while ignoring real env files
-!.env.example
+# IDE/vscode
+/.vscode/
+/.intellisense/
+/.nav/
+
+# Production builds
+/.next/
+/storybook-static/
+
+# Misc
+/.DS_Store/
+/Thumbs.db

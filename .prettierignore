@@ -1,0 +1,17 @@
+# Prettier ignore file for BioSouk
+# See https://prettier.io/docs/en/options.html#ignore-paths
+
+/node_modules/
+/dist/
+/build/
+/coverage/
+/*.log
+/.env*
+
+# Production builds
+/.next/
+/storybook-static/
+
+# Misc
+/.DS_Store/
+/Thumbs.db
